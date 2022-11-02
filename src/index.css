@@ -18,6 +18,12 @@ code {
     monospace;
 }
 
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .tarot-card {
   border-style: solid;
@@ -27,6 +33,7 @@ code {
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgb(115, 54, 132, 0.5), inset 0px 0px 0px 10px white;
   background-color: #FCF5E5;
+  margin: 15px;
 }
 
 .fa-icon-styling {
@@ -36,4 +43,5 @@ code {
 
 .card-title {
   font-family: 'IM Fell English SC', serif;
+  font-size: 40px;
 }

@@ -1,9 +1,18 @@
 import Card from './Card.js';
-
+import { faHourglassStart } from '@fortawesome/free-solid-svg-icons';
+import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
+import { faHourglassEmpty } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
 
+  
   const timeTitle = ['Past', 'Present', 'Future']
+  const iconList = [];
+
+  iconList.push(<FontAwesomeIcon icon={faHourglassStart} />);
+  iconList.push(<FontAwesomeIcon icon={faHourglassHalf} />);
+  iconList.push(<FontAwesomeIcon icon={faHourglassEmpty} />)
 
   return (
     <div className="App">
@@ -14,14 +23,14 @@ function App() {
       </div>
       <div className="container text-center">
         <div className="row">
-          <div className="col-lg-4 col-md-12">
-            <Card timeTitle={timeTitle[0]} /> 
+          <div className="col-lg-4 col-md-12 card-container">
+            <Card timeTitle={timeTitle[0]} iconList={iconList[0]} /> 
           </div>
-          <div className="col-lg-4 col-md-12">
-            <Card timeTitle={timeTitle[1]}/> 
+          <div className="col-lg-4 col-md-12 card-container">
+            <Card timeTitle={timeTitle[1]} iconList={iconList[1]}/> 
           </div>
-          <div className="col-lg-4 col-md-12">
-            <Card timeTitle={timeTitle[2]}/> 
+          <div className="col-lg-4 col-md-12 card-container">
+            <Card timeTitle={timeTitle[2]} iconList={iconList[2]}/> 
           </div>
         </div>
       </div>
