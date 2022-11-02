@@ -2,6 +2,9 @@ import Card from './Card.js';
 
 
 function App() {
+
+  const timeTitle = ['Past', 'Present', 'Future']
+
   return (
     <div className="App">
       <div>
@@ -12,13 +15,13 @@ function App() {
       <div className="container text-center">
         <div className="row">
           <div className="col-lg-4 col-md-12">
-            <Card /> 
+            <Card timeTitle={timeTitle[0]} /> 
           </div>
           <div className="col-lg-4 col-md-12">
-            <Card /> 
+            <Card timeTitle={timeTitle[1]}/> 
           </div>
           <div className="col-lg-4 col-md-12">
-            <Card /> 
+            <Card timeTitle={timeTitle[2]}/> 
           </div>
         </div>
       </div>

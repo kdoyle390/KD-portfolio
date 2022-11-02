@@ -25,10 +25,15 @@ code {
   height: 3.5in;
   width: 2.5in;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px rgb(115, 54, 132, 0.5);
-
+  box-shadow: 10px 5px 5px rgb(115, 54, 132, 0.5), inset 0px 0px 0px 10px white;
+  background-color: #FCF5E5;
 }
 
-#shadow-right {
+.fa-icon-styling {
+  font-size: 180px;
+  margin-bottom: 0;
+}
 
+.card-title {
+  font-family: 'IM Fell English SC', serif;
 }
