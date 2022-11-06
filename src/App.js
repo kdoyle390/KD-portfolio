@@ -1,8 +1,10 @@
 import Card from './Card.js';
-import { faHourglassStart } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardList, faHourglassStart } from '@fortawesome/free-solid-svg-icons';
 import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
-import { faHourglassEmpty } from '@fortawesome/free-solid-svg-icons';
+import { faHourglassEnd } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// need to figure out how to rotate cards
 
 function App() {
 
@@ -12,25 +14,26 @@ function App() {
 
   iconList.push(<FontAwesomeIcon icon={faHourglassStart} />);
   iconList.push(<FontAwesomeIcon icon={faHourglassHalf} />);
-  iconList.push(<FontAwesomeIcon icon={faHourglassEmpty} />)
+  iconList.push(<FontAwesomeIcon icon={faHourglassEnd} />)
 
   return (
     <div className="App">
-      <div>
+      <div className="bio-container">
         <h1>Kelsey Doyle</h1>
         <h2>Software Engineer</h2>
         <p>Bio goes here...</p>
       </div>
+
       <div className="container text-center">
         <div className="row">
           <div className="col-lg-4 col-md-12 card-container">
-            <Card timeTitle={timeTitle[0]} iconList={iconList[0]} /> 
+            <Card timeTitle={timeTitle[0]} iconList={iconList[0]} id='card-left' /> 
           </div>
           <div className="col-lg-4 col-md-12 card-container">
-            <Card timeTitle={timeTitle[1]} iconList={iconList[1]}/> 
+            <Card timeTitle={timeTitle[1]} iconList={iconList[1]} id='card-center' /> 
           </div>
           <div className="col-lg-4 col-md-12 card-container">
-            <Card timeTitle={timeTitle[2]} iconList={iconList[2]}/> 
+            <Card timeTitle={timeTitle[2]} iconList={iconList[2]} id='card-right'/> 
           </div>
         </div>
       </div>
