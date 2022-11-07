@@ -1,12 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 
 function Card({timeTitle, iconList}) {
-
-    const [flip, setFlip] = useState(true);
-    
-
-
+ 
     return(
         <>
 
@@ -16,6 +11,7 @@ function Card({timeTitle, iconList}) {
                     <p className="fa-icon-styling">
                         {iconList}
                     </p>
+                    <img src="./imgs/tarotCup.png" />
                     <h1 className="card-title">{timeTitle}</h1>
                 </div>
                 <div className="flip-card-back">
@@ -30,5 +26,3 @@ function Card({timeTitle, iconList}) {
 }
 
 export default Card;
-// config style then refactor
-// Can I move an id up to the App level to change shadow properties for each card?

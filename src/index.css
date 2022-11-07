@@ -1,10 +1,6 @@
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-repeat: no-repeat;
@@ -13,12 +9,43 @@ body {
   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1, h2 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#name {
+  width: 75%;
+  font-size: 4em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  padding: 15px;
+}
+
+#title {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  padding: 15px;
+}
+
+.bio-container {
+  padding-top: 5em;
 }
 
 
+#bio-text {
+  font-family: 'Lato';
+  font-size: 18px;
+  width: 30em;
+  margin: auto;
+  text-align: justify;
+}
+
+
+/* CARD SPECIFIC STYLING */
 
 .card-container {
   display: flex;
@@ -26,8 +53,6 @@ code {
   justify-content: center;
 }
 
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   perspective: 1000px;
   height: 3.5in;
@@ -56,8 +81,6 @@ img {
   height: 200px;
   width: 300px;
 }
-
-
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -88,8 +111,6 @@ img {
   border-radius: 10px;
   background-color: #f0e6cd;
 }
-
-
 
 /* Style the back side */
 .flip-card-back {

@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
       <div className="bio-container">
-        <h1>Kelsey Doyle</h1>
-        <h2>Software Engineer</h2>
-        <p>Bio goes here...</p>
+        <h1 id="name">Kelsey Doyle</h1>
+        <h2 id="title">Software Engineer</h2>
+        <p id="bio-text">Hi there! Welcome to my page. Hover over the tarot cards below to learn a little bit more about me and my software engineering journey.</p>
       </div>
 
       <div className="container text-center">
