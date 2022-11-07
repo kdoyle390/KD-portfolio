@@ -9,6 +9,7 @@ body {
   
 }
 
+/* BIO AND INTRO SECTION */
 
 h1, h2 {
   margin: auto;
@@ -62,6 +63,24 @@ h1, h2 {
   /* cursor: pointer; */
 }
 
+.tarot-border {
+  height: 3.40in;
+  width: 2.25in;
+  padding-top: 10px;
+  /* position: absolute; */
+}
+
+.tarot-logo {
+  height: 7em;
+  width: 7em;
+  margin-bottom: 50px;
+  /* Allows logos to appear over the top of the tarot-border (tarotOutline.png) img */
+  position: relative;
+  margin-top: -23em;
+
+}
+
+
 .fa-icon-styling {
   font-size: 180px;
   margin-bottom: 0;
@@ -70,6 +89,9 @@ h1, h2 {
 .card-title {
   font-family: 'IM Fell English SC', serif;
   font-size: 40px;
+  position: relative;
+  margin-top: -3em;
+  
 }
 
 .back {
