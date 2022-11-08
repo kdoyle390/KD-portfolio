@@ -138,3 +138,7 @@ img {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+#card-back-text {
+  margin-top: -20em;
+}

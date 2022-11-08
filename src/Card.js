@@ -5,7 +5,7 @@ import tarotSun from './imgs/tarotSun.png';
 import tarotOutline from './imgs/tarotOutline.png';
 
 
-function Card({timeTitle, border, iconList}) {
+function Card({timeTitle, border, iconList, backText}) {
  
     return(
         <>
@@ -19,7 +19,7 @@ function Card({timeTitle, border, iconList}) {
                 </div>
                 <div className="flip-card-back">
                     <img className="tarot-border" src={border} />
-                    <p>back of card content</p>
+                    <p id="card-back-text">{backText}</p>
                 </div>
             </div>
         </div>
