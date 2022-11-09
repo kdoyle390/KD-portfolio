@@ -19,21 +19,20 @@ h1, h2 {
 
 #name {
   width: 75%;
-  font-size: 4em;
+  font-size: 3.5em;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  padding: 15px;
 }
 
 #title {
   font-family: 'Lato';
   font-weight: 300;
   font-style: italic;
-  padding: 15px;
+  font-size: 18px;
 }
 
 .bio-container {
-  padding-top: 5em;
+  padding-top: 1em;
 }
 
 
@@ -43,7 +42,21 @@ h1, h2 {
   width: 30em;
   margin: auto;
   text-align: justify;
+  padding-bottom: 20px;
 }
+
+.button-container {
+  margin: auto;
+  align-items: center;
+  width: 50%;
+}
+.button-link {
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+
 
 
 /* CARD SPECIFIC STYLING */
@@ -137,8 +150,12 @@ img {
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
+  
 }
 
 #card-back-text {
-  margin-top: -20em;
+  margin-top: -15em;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
