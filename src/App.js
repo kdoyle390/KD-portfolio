@@ -6,7 +6,7 @@ import tarotOutline from './imgs/tarotOutline.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faDownload  } from '@fortawesome/free-solid-svg-icons';
 
-
+// Add alt text to images
 
 function App() {
 
